@@ -1,0 +1,189 @@
+header{
+    width: 100%;
+    display: inline-block;
+    padding:0%;
+    margin:0%;
+}
+.mylogo{
+    display:block;
+    float:left;
+    padding: 1rem 0rem 1rem 10rem;
+
+}
+.mylinks{
+    float:right;
+    display:block;
+    color:white;
+    text-decoration: none;
+    padding: 2rem 10rem 1rem 0rem;
+}
+
+.smiles{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+.smiles h1{
+    font-size:xx-large;
+    font-weight: bolder;
+    color:
+}
+ 
+.smiles p{
+    margin-top: 0rem;
+    column-count: 1;
+    column-gap:;
+    font-size: large;
+    text-transform:capitalize;
+    
+}
+
+button{ 
+    color:white;
+    background-color: blueviolet;
+    margin-top: 1rem;
+
+}
+span{
+    color: blueviolet;
+}
+.learn{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+
+.people{
+    display:flex;
+    justify-content: center;
+    column-count: 4;
+    column-gap: 5rem;
+    width:100%;
+    margin-bottom: 3rem;
+}
+.italic{
+    font-style: italic;
+}
+.blockquote{
+    max-width:inherit;
+    background-color: rgb(170, 73, 170);
+    display:flex;
+    justify-content: center;
+    padding-left: 4rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+.popular{
+    word-spacing: 40%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display:flex;
+    justify-content: center;
+    
+}
+.videos{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:inherit;
+    background-color: white;
+    column-count: 4;
+    column-gap: 3rem;
+}
+.membership{
+    background-color:rgb(2, 2, 48) ;
+    color:white;
+    
+}
+.membership h1{
+     display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    margin-bottom: 5rem;
+}
+.mber{
+    display: flex;
+    justify-content: center;
+    column-count: 4;
+    column-gap: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    text-align: center;
+}
+/* .member{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+} */
+
+
+.membership button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.explaination{
+    color: black;
+    background-color: white;
+}
+
+.explaination h1{
+    font-size:xx-large;
+    font-weight: bold;
+    opacity: 7rem;
+    display:flex;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    /* margin-top: 2rem; */
+}
+.explaintitle{
+    font-weight: bolder;
+}
+.explain{
+    display: flex;
+    justify-content: center;
+    column-count: 4;
+    column-gap: 5rem;
+    column-width: 250px;
+    padding-bottom: 2rem;
+    text-align: justify;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+footer{
+    background-color:rgb(2, 2, 48) ;
+    color:white;
+    width: 100%;
+    display: inline-block;
+    padding:0%;
+    margin:0%;
+    
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    float:left;
+    padding-left: 6rem;
+    padding-bottom: 2rem;
+}
+
+.linksimage{
+    display: flex;
+    justify-content: flex-end;
+    float:right;
+    padding-right: 4rem;
+}
+.copy{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0rem;
+    padding-top: 4rem;
+    color: grey;
+}

@@ -1,20 +1,41 @@
 body {
     display: flex;
     flex-direction: column;
+    color:black;
+    background-color: bisque;
 }
-
+a:hover{
+    text-decoration: underline;
+    color: brown;
+}
+a:visited{
+    color:purple
+}
 main {
     display: flex;
     flex-direction: row;
     flex: auto;
 }
 
-main article {
+ main .article {
     flex: 2;
     overflow-y: auto;
 }
 
-main aside {
+ main .aside {
     flex: 1;
     overflow-y: auto;
+}
+article aside {
+    overflow-y: auto;
+}
+.title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight:bold;
+}
+aside{
+    background-color: azure;}
+aside p{
+    color:rgb(4, 4, 114);
 }

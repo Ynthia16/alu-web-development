@@ -1,8 +1,8 @@
-#HTML Project
+# HTML Project
 ---
-Webpage Implementation: Semantic HTML Structure
+## Webpage Implementation: Semantic HTML Structure
 
-Project Description...
+### Project Description...
 
 This project aims to implement a webpage from a designer file, focusing primarily on creating a well-structured HTML layout using semantic markup. The project does not involve any CSS or styling aspects; its sole purpose is to demonstrate my proficiency in utilizing HTML tags to establish a meaningful structure for the webpage.
 
