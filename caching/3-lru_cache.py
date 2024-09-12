@@ -1,31 +1,33 @@
-#!/usr/bin/python3
-"""LRU cache"""
+from collections import OrderedDict
 
-BaseCaching = __import__('base_caching').BaseCaching
+class BaseCaching:
+    MAX_ITEMS = 6
+
+    def __init__(self):
+        self.cache_data = OrderedDict()
+
+    def print_cache(self):
+        print("Current cache:")
+        for key, value in self.cache_data.items():
+            print(f"{key}: {value}")
 
 
 class LRUCache(BaseCaching):
-    """LRU cache"""
+    def __init__(self):
+        super().__init__()
 
     def put(self, key, item):
-        """Add an item in the cache"""
         if key is None or item is None:
             return
-        if (key not in self.cache_data and
-                len(self.cache_data) >= BaseCaching.MAX_ITEMS):
-            if self.cache_data:
-                discard = next(iter(self.cache_data))
-                print("DISCARD: {}".format(discard))
-                del self.cache_data[discard]
-        if key in self.cache_data:
-            del self.cache_data[key]
         self.cache_data[key] = item
+        if len(self.cache_data) > self.MAX_ITEMS:
+            lru_key, _ = self.cache_data.popitem(last=False)
+            print(f"DISCARD: {lru_key}")
 
     def get(self, key):
-        """Get an item in the cache"""
         if key is None or key not in self.cache_data:
             return None
-        item = self.cache_data[key]
-        del self.cache_data[key]
-        self.cache_data[key] = item
-        return item
+        value = self.cache_data.pop(key)
+        self.cache_data[key] = value  # Move to the end to mark as recently used
+        return value
+
