@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""MRU cache"""
+""" lru cache """
 
 BaseCaching = __import__('base_caching').BaseCaching
 
 
 class MRUCache(BaseCaching):
-    """MRU cache"""
+    """ lru cache """
 
     def put(self, key, item):
         """Add an item in the cache"""
@@ -13,9 +13,10 @@ class MRUCache(BaseCaching):
             return
         if (key not in self.cache_data and
                 len(self.cache_data) >= BaseCaching.MAX_ITEMS):
-            discard = next(reversed(self.cache_data))
-            print("DISCARD: {}".format(discard))
-            del self.cache_data[discard]
+            if self.cache_data:
+                discard = next(reversed(list(self.cache_data)))
+                print("DISCARD: {}".format(discard))
+                del self.cache_data[discard]
         if key in self.cache_data:
             del self.cache_data[key]
         self.cache_data[key] = item
@@ -27,4 +28,4 @@ class MRUCache(BaseCaching):
         item = self.cache_data[key]
         del self.cache_data[key]
         self.cache_data[key] = item
-        return item
+        return self.cache_data[key]
